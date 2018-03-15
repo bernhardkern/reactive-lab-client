@@ -36,4 +36,9 @@ public class CassandraConfiguration extends AbstractCassandraConfiguration {
 
         return Collections.singletonList(specification);
     }
+
+    @Override
+    public String[] getEntityBasePackages() {
+        return new String[]{"de.virtual7.reactivelabclient.events"};
+    }
 }
